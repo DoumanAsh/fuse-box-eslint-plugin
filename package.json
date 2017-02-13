@@ -1,6 +1,6 @@
 {
   "name": "fuse-box-eslint-plugin",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ESlint plugin for fuse-box",
   "author": "Douman",
   "license": "MIT",

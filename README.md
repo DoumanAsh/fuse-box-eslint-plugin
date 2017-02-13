@@ -9,7 +9,7 @@ ESlint plugin for [fuse-box](https://github.com/fuse-box/fuse-box)
 
 ```js
 const fsbx = require('fuse-box');
-const eslinter = require('./src');
+const eslinter = require('fuse-box-eslint-plugin');
 
 fsbx.FuseBox.init({
     homeDir: "src/",
