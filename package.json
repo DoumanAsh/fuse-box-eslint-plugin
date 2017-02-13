@@ -17,7 +17,7 @@
     "test-ut": "node --harmony-async-await ./node_modules/ava/cli.js --verbose",
     "test": "npm run test-build && npm run test-ut",
     "coverage": "node --harmony-async-await ./node_modules/nyc/bin/nyc.js node --harmony-async-await ./node_modules/ava/cli.js",
-    "lint": "eslint src/"
+    "lint": "eslint src/ test/"
   },
 
   "dependencies": {

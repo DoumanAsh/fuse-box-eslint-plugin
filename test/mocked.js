@@ -16,11 +16,11 @@ test('init with defaults', async t => {
     t.deepEqual(plugin.test, /js$/);
     t.is(plugin.eslint.cwd, plugin.root);
     t.deepEqual(plugin.eslint.baseConfig, { "extends": ["eslint:recommended"] });
-    t.is(plugin.eslint.configFile, DEFAULT_ESLINT_CONFIG)
+    t.is(plugin.eslint.configFile, DEFAULT_ESLINT_CONFIG);
 });
 
 test.serial('init with defaults no ESLint default configFile', async t => {
-    const eslint_plugin_stub = sinon.stub(eslint, "CLIEngine")
+    const eslint_plugin_stub = sinon.stub(eslint, "CLIEngine");
     const stub = sinon.stub(fs, "existsSync")
                       .withArgs(DEFAULT_ESLINT_CONFIG)
                       .returns(false);
@@ -45,7 +45,7 @@ test.serial('init with defaults no ESLint default configFile', async t => {
             "extends": ["eslint:recommended"]
         },
         configFile: null
-    }))
+    }));
     t.true(!!plugin.inner);
 
     eslint.CLIEngine.restore();
@@ -91,7 +91,7 @@ test('transform some file', async t => {
         context: {
             defaultPackageName: "2"
         }
-    }
+    };
 
     const plugin = eslinter();
     plugin.init();
@@ -102,12 +102,12 @@ test('transform some file', async t => {
             "extends": ["eslint:recommended"]
         },
         configFile: DEFAULT_ESLINT_CONFIG
-    }))
+    }));
     t.true(!!plugin.inner);
 
     plugin.inner.executeOnText = () => {
         t.fail("Shouldn't call executeOnText!");
-    }
+    };
 
     plugin.transform(file);
 
@@ -125,7 +125,7 @@ test('transform some file', async t => {
     let executeOnText_called = false;
     plugin.inner.executeOnText = (content, file_path) => {
         t.is(content, file.contents);
-        t.is(file_path, path.relative(plugin.root, file.absPath))
+        t.is(file_path, path.relative(plugin.root, file.absPath));
         executeOnText_called = true;
 
         return lint_result;
