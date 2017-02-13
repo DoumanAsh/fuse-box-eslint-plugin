@@ -1,0 +1,18 @@
+{
+  "name": "fuse-box-eslint-plugin",
+  "version": "0.0.1",
+  "description": "ESlint plugin for fuse-box",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node fuse.js",
+    "lint": "eslint src/"
+  },
+  "author": "Douman",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^3.15.0"
+  },
+  "devDependencies": {
+    "fuse-box": "^1.3.112"
+  }
+}
