@@ -1,5 +1,8 @@
 # fuse-box-eslint-plugin
 
+[![Build Status](https://travis-ci.org/DoumanAsh/fuse-box-eslint-plugin.svg?branch=master)](https://travis-ci.org/DoumanAsh/fuse-box-eslint-plugin)
+[![Package version](https://img.shields.io/npm/v/fuse-box-eslint-plugin.svg)](https://npmjs.org/package/fuse-box-eslint-plugin)
+
 ESlint plugin for [fuse-box](https://github.com/fuse-box/fuse-box)
 
 ## Usage
