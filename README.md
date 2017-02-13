@@ -36,7 +36,7 @@ Specifies regular expression to filter files.
 
 **Default:** `/js$/`
 
-#### eslint
+### eslint
 
 Specifies ESLint [options](http://eslint.org/docs/developer-guide/nodejs-api#cliengine) that are passed to ESlint engine.
 

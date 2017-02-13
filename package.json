@@ -2,13 +2,21 @@
   "name": "fuse-box-eslint-plugin",
   "version": "0.0.1",
   "description": "ESlint plugin for fuse-box",
+  "author": "Douman",
+  "license": "MIT",
+
   "main": "src/index.js",
+
+  "repository": "https://github.com/DoumanAsh/fuse-box-eslint-plugin",
+  "bugs": {
+    "url": "https://github.com/DoumanAsh/fuse-box-eslint-plugin/issues"
+  },
+
   "scripts": {
     "test": "node fuse.js",
     "lint": "eslint src/"
   },
-  "author": "Douman",
-  "license": "MIT",
+
   "dependencies": {
     "eslint": "^3.15.0"
   },
