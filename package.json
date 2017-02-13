@@ -45,7 +45,8 @@
     ],
     "reporter": [
       "html",
-      "text"
+      "text",
+      "lcov"
     ]
   }
 }

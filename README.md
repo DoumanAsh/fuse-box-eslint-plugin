@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/DoumanAsh/fuse-box-eslint-plugin.svg?branch=master)](https://travis-ci.org/DoumanAsh/fuse-box-eslint-plugin)
 [![Package version](https://img.shields.io/npm/v/fuse-box-eslint-plugin.svg)](https://npmjs.org/package/fuse-box-eslint-plugin)
+[![Coverage Status](https://coveralls.io/repos/github/DoumanAsh/fuse-box-eslint-plugin/badge.svg?branch=master)](https://coveralls.io/github/DoumanAsh/fuse-box-eslint-plugin?branch=master)
 
 ESlint plugin for [fuse-box](https://github.com/fuse-box/fuse-box)
 
