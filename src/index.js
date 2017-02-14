@@ -68,8 +68,7 @@ class ESLinter {
             }
 
             const formatter = this.inner.getFormatter();
-            let msg = `${formatter(report.results)}`;
-            console.log(msg);
+            console.log(formatter(report.results));
         }
     }
 }
