@@ -16,10 +16,11 @@ class ESLinter {
      *
      * ESLint defaults:
      * * cwd - root of your project;
-     * * configFile - <root>/.eslintc.js
+     * * configFile - <root>/.eslintc.js if present
+     * * baseConfig - { "extends": ["eslint:recommended"] }
      */
     constructor(options) {
-        this.root = process.cwd();
+        this.root = require('app-root-path').path;
 
         const eslint_defaults = {
             cwd: this.root,

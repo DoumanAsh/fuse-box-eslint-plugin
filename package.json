@@ -1,6 +1,6 @@
 {
   "name": "fuse-box-eslint-plugin",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "ESlint plugin for fuse-box",
   "author": "Douman",
   "license": "MIT",
@@ -21,7 +21,8 @@
   },
 
   "dependencies": {
-    "eslint": "^3.15.0"
+    "eslint": "^3.15.0",
+    "app-root-path": "*"
   },
   "devDependencies": {
     "fuse-box": "*",
