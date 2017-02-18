@@ -5,6 +5,9 @@ fsbx.FuseBox.init({
     homeDir: "src/",
     plugins: [
         eslinter({
+            eslint: {
+                configFile: ".eslintrc.js"
+            }
         })
     ],
     outFile: "build/out.js"

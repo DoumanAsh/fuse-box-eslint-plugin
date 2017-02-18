@@ -51,6 +51,12 @@ class ESLinter {
             return;
         }
 
+        if (options.eslint.configFile) {
+            if (!path.isAbsolute(options.eslint.configFile)) {
+                options.eslint.configFile = path.join(this.root, options.eslint.configFile);
+            }
+        }
+
         this.eslint = Object.assign(eslint_defaults, options.eslint);
     }
 
