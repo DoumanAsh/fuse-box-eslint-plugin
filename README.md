@@ -27,7 +27,7 @@ To configure plugin you only need to pass all options in form of Object:
 
 ```js
 eslinter({
-    pattern: /js(x)*$/
+    pattern: /js(x)*$/,
     eslint: {
         useEslintrc: false
     }
